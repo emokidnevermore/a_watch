@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0",
+  "baseUrl": "https://yummyanime.tv/",
+  "selectors": {
+    "list": {
+      "container": "#dle-content",
+      "item": ".movie-item",
+      "link": ".movie-item__link[href]",
+      "poster": "img[src]",
+      "title": ".movie-item__title",
+      "rating": ".movie-item__rating",
+      "year": ".movie-item__meta span"
+    },
+    "detail": {
+      "container": ".fullstory",
+      "title": ".inner-page__title h2, .fullstory__title",
+      "poster": ".fullstory__poster img[src]",
+      "description": ".fullstory__description, .inner-page__desc p",
+      "genres": ".fullstory__info a[href*=\"/genre/\"]"
+    },
+    "player": {
+      "container": "#player",
+      "iframe": "#player iframe[src]",
+      "script_hint": "xfplayer|controller.php?mod=xfp",
+      "series_item": ".series__item, [data-episode]"
+    },
+    "pagination": {
+      "container": ".pagination, #pagination, .navigation",
+      "links": ".pagination a[href], .navigation a[href]"
+    }
+  }
+}

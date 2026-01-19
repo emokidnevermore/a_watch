@@ -1,0 +1,91 @@
+# Miscellaneous
+*.class
+*.lock
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+build/
+.metadata
+.flutter-plugins-dependencies
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Visual Studio Code related
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.build/
+.packages
+.pub-preload-cache/
+.pub-cache/
+.pub/
+flutter_export_environment.sh
+*.pem
+*.key
+*.jks
+
+# Android related
+**/android/**/gradlew
+**/android/**/gradle-wrapper.jar
+**/android/**/Directory.Build.props
+**/android/**/Directory.Build.targets
+**/android/**/.gradle
+**/android/**/build/
+**/android/**/outputs/
+
+# iOS/XCode related
+**/ios/**/*.mode1v3
+**/ios/**/*.mode2v3
+**/ios/**/*.moved-aside
+**/ios/**/*.pbxuser
+**/ios/**/*.perspectivev3
+**/ios/**/*sync/
+**/ios/**/.sconsign.dblite
+**/ios/**/.tags*
+**/ios/**/.vagrant/
+**/ios/**/DerivedData/
+**/ios/**/Icon?
+**/ios/**/Pods/
+**/ios/**/.symlinks/
+**/ios/**/profile
+**/ios/**/xcuserdata
+**/ios/**/xcuserdata/
+**/ios/Pods/
+**/ios/Runner.xcworkspace/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Coverage
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
