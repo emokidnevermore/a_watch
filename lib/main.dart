@@ -16,7 +16,15 @@ import 'package:window_manager/window_manager.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  MediaKit.ensureInitialized();
+
+  // Initialize MediaKit with error handling
+  try {
+    MediaKit.ensureInitialized();
+  } catch (e) {
+    // Log error but continue app initialization
+    // MediaKit will be initialized when needed for video playback
+    debugPrint('MediaKit initialization failed: $e');
+  }
 
   // Инициализация DI
   await init();
