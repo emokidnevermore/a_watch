@@ -79,8 +79,10 @@ jobs:
       - run: flutter build windows --release
 
       - name: Rename EXE
+        shell: pwsh
         run: |
-          rename build/windows/x64/runner/Release/*.exe a_watch.exe
+          $exe = Get-ChildItem build/windows/x64/runner/Release/*.exe | Select-Object -First 1
+          Rename-Item $exe.FullName a_watch.exe
 
       - name: Upload EXE artifact
         uses: actions/upload-artifact@v4
